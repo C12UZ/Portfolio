@@ -50,9 +50,11 @@ body {
 }
 
 nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: auto;
+    gap: 0.1rem;
 }
 
 a {
