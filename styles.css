@@ -1,43 +1,14 @@
-.Screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  background-color: rgba(0,0,0,0.15);
-  animation: ScreenEffect 0.05s ease infinite;
-  cursor: pointer;
-}
-
-@keyframes ScreenEffect {
-  0% { opacity: 0 }
-  50% { opacity: 1 }
-  100% { opacity: 0 }
-}
-
-.Pulse {
-  animation: Pulse 1.5s ease infinite;
-}
-
-@keyframes Pulse {
-  0% { opacity: 0 }
-  50% { opacity: 1 }
-  100% { opacity: 0 }
-}
-
 .DivClass {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  box-sizing: border-box;
   background: #0c131f;
   padding: 0;
 }
 
-.MatrixTextEffect {
+.mte {
   color: rgba(202, 212, 255, 0.5);
   font-family: 'VT323', monospace;
   font-size: 25px;
