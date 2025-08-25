@@ -83,8 +83,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 0px;
-    margin-bottom: 0px;
+    padding: 0;
+    margin: 0;
     text-align: center;
     font-size: 100px;
 
@@ -135,7 +135,8 @@ a:hover {
   .page-title {
     height: 100vh;
     display: flex;
-    margin-bottom: 0px;
+    margin: 0;
+    padding: 0;
     justify-content: center;
     text-align: center;
     font-size: 60px;
