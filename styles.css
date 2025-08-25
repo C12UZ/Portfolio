@@ -96,7 +96,7 @@ a:hover {
 
 .footer {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 25px
 }
 
 @media (max-width: 600px) {
@@ -123,7 +123,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: auto;
+    margin-top: auto;
     gap: 0.1rem;
   }
 
@@ -135,5 +135,13 @@ a:hover {
     color: rgba(202, 212, 255, 0.5);
     font-family: 'VT323', monospace;
     text-shadow: 0 0 5px rgba(202, 212, 255, 0.5), 0 0 15px rgba(202, 200, 255, 0.5);
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
   }
 }
