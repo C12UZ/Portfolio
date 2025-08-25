@@ -17,6 +17,7 @@
 
 body {
   background: #0c131f;
+  overflow: hidden;
 }
 
 body h1 {
