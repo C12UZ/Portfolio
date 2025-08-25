@@ -48,29 +48,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-    let touchStartY = null;
-
-  window.addEventListener('touchstart', function(e) {
-    if (e.touches.length === 1) {
-      touchStartY = e.touches[0].clientY;
-    }
-  });
-
-  window.addEventListener('touchend', function(e) {
-    if (touchStartY === null || isScrolling) return;
-    let touchEndY = e.changedTouches[0].clientY;
-    let deltaY = touchStartY - touchEndY;
-    // Threshold to prevent accidental scrolls
-    if (deltaY > 40 && currentIndex < scrollItems.length - 1) {
-      currentIndex++;
-      scrollToItem(currentIndex);
-    } else if (deltaY < -40 && currentIndex > 0) {
-      currentIndex--;
-      scrollToItem(currentIndex);
-    }
-    touchStartY = null;
-  });
-
   // Start at the title
   scrollToItem(currentIndex);
 });
