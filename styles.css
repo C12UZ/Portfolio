@@ -59,7 +59,7 @@ a:hover {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-items: center;
     margin: 40px auto;
@@ -67,22 +67,27 @@ a:hover {
 }
 
 .imgclass {
-    width: 750px;
+    width: 1200px;
     max-height: 6000px;
     margin-bottom: 200px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 0 5px rgba(202, 212, 255, 0.5),
+        0 0 15px rgba(202, 200, 255, 0.5),
+        0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .page-title {
-    padding-top: 355px;
-    margin-bottom: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    margin-bottom: 0px;
     text-align: center;
-    font-size: 60px;
-    color: rgba(202, 212, 255, 0.5);
-    font-family: 'VT323', monospace;
-    text-shadow: 0 0 5px rgba(202, 212, 255, 0.5), 0 0 15px rgba(202, 200, 255, 0.5);
+    font-size: 100px;
+
 }
 
 .imgclass-short {
@@ -128,8 +133,10 @@ a:hover {
   }
 
   .page-title {
-    padding-top: 250px;
-    margin-bottom: 500px;
+    height: 100vh;
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: center;
     text-align: center;
     font-size: 60px;
     color: rgba(202, 212, 255, 0.5);
