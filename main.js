@@ -16,9 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function scrollToItem(index) {
     if (scrollItems[index]) {
-      isScrolling = true;
       scrollItems[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => { isScrolling = false; }, 700);
     }
   }
 
