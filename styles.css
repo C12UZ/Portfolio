@@ -36,12 +36,20 @@ body.no-scroll {
     margin: 0;
 }
 
+.home-page h1 {
+  font-size: 120px;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: auto;
     gap: 0.1rem;
+}
+
+.nav.h1 {
+    font-size: 100px;
 }
 
 a {
