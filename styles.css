@@ -30,6 +30,10 @@ body h1 {
 
 body.no-scroll {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 nav {
@@ -92,7 +96,7 @@ a:hover {
 
 .footer {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 25px;
 }
 
 @media (max-width: 600px) {
