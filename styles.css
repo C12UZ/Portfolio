@@ -16,10 +16,10 @@
 }
 
 body {
-  background: #0F0F0F;
+  background: #0c131f;
 }
 
-div h1 {
+body h1 {
     font-size: 50px;
     margin-bottom: 20px;
     text-align: center;
@@ -51,4 +51,31 @@ a:hover {
 
 overflow {
     overflow: hidden;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.imgclass {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page-title {
+    padding-top: 300px;
+    margin-bottom: 500px;
+    text-align: center;
+    font-size: 60px;
+    color: rgba(202, 212, 255, 0.5);
+    font-family: 'VT323', monospace;
+    text-shadow: 0 0 5px rgba(202, 212, 255, 0.5), 0 0 15px rgba(202, 200, 255, 0.5);
 }
