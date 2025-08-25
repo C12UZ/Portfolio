@@ -37,7 +37,12 @@ body.no-scroll {
 }
 
 .home-page h1 {
-  font-size: 120px;
+    font-size: 120px;
+}
+
+.home-page a {
+    font-size: 40px;
+    padding: 25px;
 }
 
 nav {
@@ -160,4 +165,13 @@ a:hover {
     min-height: 100vh;
     margin: 0;
   }
+
+  .home-page h1 {
+    font-size: 70px;
+}
+
+  .home-page a {
+    font-size: 30px;
+    padding: 25px;
+}
 }
