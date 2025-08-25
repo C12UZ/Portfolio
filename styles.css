@@ -164,19 +164,6 @@ a:hover {
 
 
 
-
-/* Footer Styles */
-.footer .backtotop {
-    display: block;
-}
-
-.footer {
-    text-align: center;
-    margin-bottom: 25px
-}
-
-
-
 /* Page Title Styles */
 .page-title {
     height: 100vh;
@@ -189,6 +176,22 @@ a:hover {
     font-size: 100px;
     animation: neonFlicker 2s linear 1;
 
+}
+
+
+
+/* Footer Styles */
+.footer .backtotop {
+    display: block;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.main-footer a {
+  font-size: 19px !important;
 }
 
 

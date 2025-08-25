@@ -1,13 +1,12 @@
+
+/* Back to Top Button */
 document.getElementById('backToTopjs').addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-document.getElementById('backToTopjs').addEventListener('click', function(e) {
-  e.preventDefault();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
 
+/* Scroll Animation */
 document.addEventListener('DOMContentLoaded', function () {
   const title = document.querySelector('.page-title');
   const images = Array.from(document.querySelectorAll('.imgclass'));
@@ -23,9 +22,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function getCurrentIndex() {
+    let minDistance = Infinity;
+    let index = 0;
+    scrollItems.forEach((item, i) => {
+      const rect = item.getBoundingClientRect();
+      const distance = Math.abs(rect.top + rect.height / 2 - window.innerHeight / 2);
+      if (distance < minDistance) {
+        minDistance = distance;
+        index = i;
+      }
+    });
+    return index;
+  }
+
   window.addEventListener('wheel', function (e) {
     if (isScrolling) return;
     e.preventDefault();
+    currentIndex = getCurrentIndex();
     if (e.deltaY > 0 && currentIndex < scrollItems.length - 1) {
       currentIndex++;
       scrollToItem(currentIndex);
@@ -37,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('keydown', function (e) {
     if (isScrolling) return;
+    currentIndex = getCurrentIndex();
     if ((e.key === 'ArrowDown' || e.key === 'PageDown') && currentIndex < scrollItems.length - 1) {
       e.preventDefault();
       currentIndex++;
@@ -47,7 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollToItem(currentIndex);
     }
   });
-
-  // Start at the title
-  scrollToItem(currentIndex);
 });
